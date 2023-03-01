@@ -45,6 +45,122 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-5-steps-to-building-a-sports-betting-predictive-model-with-Dickens" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/5-steps-to-building-a-sports-betting-predictive-model-with-Dickens/" class="article-date">
+  <time class="dt-published" datetime="2023-01-04T16:35:38.000Z" itemprop="datePublished">2023-01-05</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Online-Casino/">Online Casino</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/5-steps-to-building-a-sports-betting-predictive-model-with-Dickens/">5 steps to building a sports betting predictive model with Dickens</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="5-steps-to-building-a-sports-betting-predictive-model-with-Dickens"><a href="#5-steps-to-building-a-sports-betting-predictive-model-with-Dickens" class="headerlink" title="5 steps to building a sports betting predictive model with Dickens"></a>5 steps to building a sports betting predictive model with Dickens</h1><p>In this article, we will be walking through the steps needed to build a predictive model for sports betting. We will use the popular Python library Dickens to do this.</p>
+<h1 id="Step-1-Collect-data"><a href="#Step-1-Collect-data" class="headerlink" title="Step 1: Collect data"></a>Step 1: Collect data</h1><p>The first step is to collect data. This can be done in a number of ways, but one of the easiest is to simply download it from online sources. In our example, we will be using historical data for NBA games.</p>
+<p>Once we have our data, we need to load it into Dickens. This can be done using the read_csv() function.</p>
+<p>import dicken as dd<br>data = dd . read_csv ( ‘./nba_data.csv’ )</p>
+<h1 id="Step-2-Preprocess-the-data"><a href="#Step-2-Preprocess-the-data" class="headerlink" title="Step 2: Preprocess the data"></a>Step 2: Preprocess the data</h1><p>The next step is to preprocess the data. This includes things such as cleaning and transforming the data so that it is ready for modeling. In our example, we will be doing some basic cleaning and then converting the game outcome into a binary classification problem (win or lose).</p>
+<h1 id="Cleaning-the-data"><a href="#Cleaning-the-data" class="headerlink" title="Cleaning the data"></a>Cleaning the data</h1><p>data = data . map ( lambda x : x . clean () . astype ( int )) # Converting to a binary classification problem<br>data = data [ data [ ‘game_outcome’ ] == 1 ] # dropping all rows with a game outcome of 0 (loss)<br>data = data [:, 0 : 2 ] # Skipping the first two columns (date and opponent)</p>
+<h1 id="Step-3-Building-the-model"><a href="#Step-3-Building-the-model" class="headerlink" title="Step 3: Building the model"></a>Step 3: Building the model</h1><p> At this point, we are ready to start building our model. We will be using a simple linear regression model for this tutorial. The key thing to remember is that we need to convert our data into a format that can be used by the linear regression model. In our case, this means converting it into a series of numbers that can be used in calculations. We can do this using the convert() function from Dickens.         Note: You can find more information about linear regression models here <a target="_blank" rel="noopener" href="http://bit.ly/2C1Wc5v">http://bit.ly/2C1Wc5v</a>.     import numpy as np</p>
+<p>def create_regression_model ( data ): # Defining the function for creating the regression model                  # Fitting the model on the training set                 model = np . linear_model . LinearModel ( fitfunction = lambda x : x [ 0 ], yhatfunction = lambda x : x [ 1 ]) # Training the model on the training set                 model . fit ( data [[ ‘x’ , ‘y’ ]], data [ ‘y’ ]) return model</p>
+<h1 id="Applying-the-function-to-our-data-set-regression-model-create-regression-model-data"><a href="#Applying-the-function-to-our-data-set-regression-model-create-regression-model-data" class="headerlink" title="Applying the function to our data set     regression_model = create_regression_model ( data )"></a>Applying the function to our data set     regression_model = create_regression_model ( data )</h1><p>price , _ , yhat = regression_model . predict ([ 5 , 9 ], returnclass = “yhat” ) print ( price , yhat ) 4 9</p>
+<h1 id="How-to-use-Dickens-to-build-a-powerful-sports-betting-model"><a href="#How-to-use-Dickens-to-build-a-powerful-sports-betting-model" class="headerlink" title="How to use Dickens to build a powerful sports betting model"></a>How to use Dickens to build a powerful sports betting model</h1><p> Dickens is a powerful tool for predicting the outcomes of sporting events. In this article, we will show how to use Dickens to build a sports betting model.</p>
+<p>First, we need to install Dickens. Dickens can be installed with the following command:</p>
+<p>sudo pip install dickens</p>
+<p>Once Dickens is installed, we can start building our model. The first step is to load the data. We can load the data with the following command:</p>
+<p>dickens data sport_betting.json</p>
+<p>The data file contains information on past sporting events. We can use this information to build our model.</p>
+<p>Next, we need to create a function that will predict the outcome of a sporting event. This function will take two parameters: the name of the sport and the home team. The function will return a number between 0 and 1, indicating the probability that the home team will win. We can create this function with the following code:</p>
+<p>def predict_outcome(sport,home_team):</p>
+<pre><code> # UseDickens to predict the outcome of a sporting event
+
+# Takes two parameters - sport and home_team
+
+# Returns a number between 0 and 1, indicating the probability that the home team will win
+</code></pre>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>   s = Sport(name=sport)</p>
+<p>   h = HomeTeam(name=home_team)</p>
+<h1 id="UseDickens-to-predict-the-outcome-of-the-match"><a href="#UseDickens-to-predict-the-outcome-of-the-match" class="headerlink" title="UseDickens to predict the outcome of the match"></a>UseDickens to predict the outcome of the match</h1><p>   y = Predict(s,h)</p>
+<p> return y[0]/y[1]</p>
+<h1 id="Sports-betting-101-How-to-create-a-predictive-model-with-Dickens"><a href="#Sports-betting-101-How-to-create-a-predictive-model-with-Dickens" class="headerlink" title="Sports betting 101: How to create a predictive model with Dickens"></a>Sports betting 101: How to create a predictive model with Dickens</h1><p>In this article, we will show you how to create a predictive model for sports betting with the help of the Dickens library. First, we will give an overview of the library and its features. Then, we will show you how to use it to predict the outcomes of sporting events. Finally, we will give some tips on how to improve your predictions.</p>
+<p>The Dickens library is a Python library for creating and manipulating text data. It can be used to create predictive models for a variety of tasks, including sports betting. The library has a number of features that make it ideal for this task, including:</p>
+<ul>
+<li><p>The ability to tokenize text data into individual words</p>
+</li>
+<li><p>The ability to calculate word frequencies and correlations</p>
+</li>
+<li><p>The ability to create predictive models using machine learning algorithms</p>
+</li>
+</ul>
+<p>In addition, Dickens is open source and free to use.</p>
+<p>To create a predictive model for sports betting with Dickens, you first need to gather some data about past sporting events. This data can be gathered from various sources, including online databases and news articles. Once you have gathered this data, you can import it into Python and begin creating your model.</p>
+<p>The first step is to tokenize the text data into individual words. This can be done using the tokenize() function in Dickens. Once the data has been tokenized, you can then calculate the word frequencies and correlations. This can be done using the frequencies() and correlations() functions in Dickens.</p>
+<p>Once you have calculated the word frequencies and correlations, you can begin creating your predictive model. This can be done using the machine learning algorithms included in Dickens. There are a number of different algorithms available, including random forests and boosted decision trees. You can select the algorithm that best suits your needs by using the algorithm() function in Dickens.</p>
+<p>Once you have created your predictive model, you can test it on new data to see how well it performs. You can also use it to predict the outcomes of future sporting events. To do this, you first need to download a list of upcoming sporting events from an online source. Then, you can import this data into Python and use your predictive model to predict the outcomes of each event.</p>
+<h1 id="The-ultimate-guide-to-sports-betting-predictive-modelling-with-Dickens"><a href="#The-ultimate-guide-to-sports-betting-predictive-modelling-with-Dickens" class="headerlink" title="The ultimate guide to sports betting predictive modelling with Dickens"></a>The ultimate guide to sports betting predictive modelling with Dickens</h1><p>In this article, we will discuss predictive modelling using the Dickens library. This is a powerful tool for sports betting which can be used to make accurate predictions. In particular, we will look at the following topics:</p>
+<p>-What is predictive modelling?<br>-The benefits of predictive modelling for sports betting<br>-How to set up a predictive modelling project with Dickens<br>-How to use Dickens to make predictions<br>-Examples of predictions using Dickens</p>
+<p>What is predictive modelling?<br>Predictive modelling is a process of using past data to make predictions about future events. It involves building models that can identify patterns in data and then using these models to make predictions about future events. The benefits of predictive modelling for sports betting include improved accuracy of predictions and increased profitability.</p>
+<p>How to set up a predictive modelling project with Dickens<br>Setting up a predictive modelling project with Dickens is relatively straightforward. There are three main steps:<br>-Importing data into Dickens<br>-Building a model using the imported data<br>-Making predictions using the model<br>Let’s take a look at each of these steps in more detail.</p>
+<p>Importing data into Dickens<br>The first step is to import the data into Dickens. This can be done in several ways, but the most common approach is to use a CSV file. The CSV file should have two columns: one for the predictor variable and one for the outcome variable. For example, if you are trying to predict the outcome of an NBA game, you might have a CSV file with the following columns: predictor_variable (e.g. team1_score), outcome_variable (e.g. team2_score). Once you have your CSV file, you can import it into Dickens by running the following command:</p>
+<p>import_data(“predictors.csv”)</p>
+<p>This will automatically import all of the data from the “predictors.csv” file into Dickinson. You can also specify which rows or columns you want to import by including additional arguments on the command line. For example, if you only want to import data from row 2 onwards, you could run:</p>
+<p>import_data(“predictors.csv”, start=2)</p>
+<p>If you only want to import specific columns, you can use the “columns” argument like so:</p>
+<p>import_data(“predictors.csv”, columns=c(“team1_score”,”team2_score”))</p>
+<p>This would only import the “team1_score” and “team2_score” columns from the “predictors.csv” file into Dickinson.</p>
+<p>Building a model using imported data<br>Once you have imported your data into Dickinson, it’s time to start building your model! The best way to do this is by using the “train” function, which takes as input a list of predictors and a list of outcomes. For example, if you wanted to build a model predicting NBA games outcomes, you could use the following code:</p>
+<pre><code>  train(predictors = c(&quot;team1_score&quot;,&quot;team2_score&quot;), outcomes = c(&quot;team1_won&quot;,&quot;team2_won&quot;))
+</code></pre>
+<h1 id="Getting-started-with-sports-betting-predictive-modelling-using-Dickens"><a href="#Getting-started-with-sports-betting-predictive-modelling-using-Dickens" class="headerlink" title="Getting started with sports betting predictive modelling using Dickens"></a>Getting started with sports betting predictive modelling using Dickens</h1><p>There are a few things you’ll need to get started with sports betting predictive modelling. The first is access to data. This can be sourced from a variety of places, such as bookmakers, data providers or exchanges. The second is suitable software for modelling and predicting outcomes. This article will focus on the use of Dickens, a free and open source software package for sports betting predictive modelling.</p>
+<p>Once you have access to data and Dickens installed, the next step is to load the data into Dickens. This is accomplished using the “read_table” function, which takes as input a filename in CSV (comma-separated values) format and a number of specified parameters. We’ll use an example file called “football_results.csv” that can be downloaded from the Dickens website (<a target="_blank" rel="noopener" href="https://dickens.r-forge.r-project.org/examples/football_results.csv">https://dickens.r-forge.r-project.org/examples/football_results.csv</a>). The first two lines of this file are shown below:</p>
+<p>home team,away team,1st half result,2nd half result</p>
+<p>Arsenal,Tottenham Hotspur,1-0,3-1</p>
+<p>The “read_table” function takes five input parameters: the filename of the data file, the header line (if any), the separator character(s), the quote character(s) and the ingestion mode (“copy” or “append”). In this example we will ignore the header line and specify that commas are used as separator characters and double quotes are used as quote characters. We will also instruct “.Dickens” to append the data to an existing table called “football_results”. The complete command is shown below:</p>
+<p>library(“Dickens”)</p>
+<p>football &lt;- read_table(“~/Documents/data/football_results.csv”,header=FALSE,sep=”,”,quote=”&quot;“,infile=” Dickens”)</p>
+<p>This command will read in the “football_results.csv” file and append it to the “football_results” table in Dickinson. The output from running this command is shown below:</p>
+<p>head(football)</p>
+<p>The first six rows of the “football_results” table are shown above. As can be seen, each row corresponds to a particular match between two teams, with columns containing information on 1st half results and 2nd half results. We now have all of the data we need to start modelling and predicting outcomes!</p>
+<p>One important thing to note when working with data in Dickens is that all column names must be unique within a table. In other words, you cannot have two columns called “team” in a table – one column is enough! This limitation can be overcome by renaming columns using either R’s “rename” function or Dickens’ own “rename_column” function (which has additional options for changing column names). Let’s take a look at an example where we want to rename a column called “Result”. We could use R’s “rename” function as follows:</p>
+<p>library(“Dickens”)</p>
+<p> football &lt;- read_table(“~/Documents/data/football_results.csv”,header=FALSE,sep=”,”,quote=”&quot;“,infile=” Dickens”)</p>
+<p> football$Result &lt;- football$1st half result football$2nd half result</p>
+<p>Alternatively, we could use Dickens’ own “rename_column” function as follows:</p>
+<p>library(“Dickens”)</p>
+<p> football &lt;- read_table(“~/Documents/data/football_results.csv”,header=FALSE,,quote=”&quot;“,infile=” Dickens”)</p>
+<p> rename_column(football,”Result”,”1st Half Result”,”2nd Half Result”)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://keyinvesting.net/5-steps-to-building-a-sports-betting-predictive-model-with-Dickens/" data-id="clchvs5xq0000wgv5g5c5e65n" data-title="5 steps to building a sports betting predictive model with Dickens" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Toronto-Blue-Jays&#39;-Line-Signifies-Hopes-For-Playoff-Berth" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/Toronto-Blue-Jays'-Line-Signifies-Hopes-For-Playoff-Berth/" class="article-date">
@@ -670,76 +786,11 @@
 
 
   
-    <article id="post-I-won-with-just-two-hands!" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/I-won-with-just-two-hands!/" class="article-date">
-  <time class="dt-published" datetime="2022-12-13T20:35:51.000Z" itemprop="datePublished">2022-12-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Vulkan-Casino/">Vulkan Casino</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/I-won-with-just-two-hands!/">I won with just two hands!</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="I-won-with-just-two-hands"><a href="#I-won-with-just-two-hands" class="headerlink" title="I won with just two hands!"></a>I won with just two hands!</h1><p>I was pleasantly surprised when I won a casino game with just two hands. I walked up to the blackjack table, sat down and started playing. I bet $10 on the first hand and won. The dealer showed an Ace so I doubled my bet to $20. The second card was another Ace so I automatically won and received my payout of $40.</p>
-<p>I then bet $10 on the next hand and lost. So, in total, I won $60 but it only took me two hands to do it! If you’re looking for an easy way to make some money, blackjack is definitely the game for you. Just be sure to stick to basic strategy and avoid making foolish mistakes.</p>
-<h1 id="Poker-Hands-How-Many-is-Ideal"><a href="#Poker-Hands-How-Many-is-Ideal" class="headerlink" title="Poker Hands: How Many is Ideal?"></a>Poker Hands: How Many is Ideal?</h1><p>There’s no one definitive answer to this question, as it depends on the game, the stakes, and a variety of other factors. However, in general, the higher the stakes, the more poker hands you’ll want to be playing.</p>
-<p>In a low-stakes home game with friends, for instance, you might get away with playing only 10 or 12 different hands. But in a high-stakes tournament or cash game, you’ll want to be playing closer to 30 or 40 different hands.</p>
-<p>This is because at high stakes, your opponents will be better players who can exploit your weaknesses if you’re only playing a limited number of hands. By playing more hands, you make it harder for them to target your weaknesses.</p>
-<h1 id="The-Royal-Flush"><a href="#The-Royal-Flush" class="headerlink" title="The Royal Flush"></a>The Royal Flush</h1><p>The royal flush is the best hand in poker, and it’s also the hand that everyone dreams of hitting. Unfortunately, it’s also one of the rarest hands in poker.</p>
-<p>According to statistics, the royal flush occurs only once in every 649,740 hands. So if you’re lucky enough to hit one, you can pretty much consider yourself a winner!</p>
-<h1 id="The-Straight-Flush"><a href="#The-Straight-Flush" class="headerlink" title="The Straight Flush"></a>The Straight Flush</h1><p>The straight flush is another very rare hand in poker. It occurs once in every 72,193 hands on average. So while it’s not quite as rare as the royal flush, it’s still pretty hard to hit.</p>
-<p>If you do manage to hit a straight flush, however, you can expect good odds of winning. In fact, the straight flush is one of the few poker hands that beats both a pair and two pair.</p>
-<h1 id="The-house-always-wins-but-how-many-hands-does-it-take"><a href="#The-house-always-wins-but-how-many-hands-does-it-take" class="headerlink" title="The house always wins, but how many hands does it take?"></a>The house always wins, but how many hands does it take?</h1><p>Casinos have a house edge, which means that over time they will make profits regardless of the players’ success. However, this doesn’t mean that players can’t win in the short run – in fact, some games offer particularly good odds for players.</p>
-<p>Baccarat is one such game – players have a 44.64% chance of winning when betting on the banker, and a 45.90% chance when betting on the player. This amounts to a house edge of just 0.26%. Blackjack is another game with favourable odds for players – the house edge is just 0.28%, making it one of the best bets in the casino. Craps also offers relatively good odds for players, with a house edge of 1.41%.</p>
-<p>However, it’s important to remember that these games are still not favourable for players in the long run – over time, the casino will always come out ahead. So if you’re looking to gamble with the hope of winning big, you’re better off sticking to games like roulette and slots, where the house edge is significantly higher.</p>
-<h1 id="How-to-win-at-poker-Play-the-odds-and-know-when-to-hold-‘em"><a href="#How-to-win-at-poker-Play-the-odds-and-know-when-to-hold-‘em" class="headerlink" title="How to win at poker: Play the odds and know when to hold ‘em"></a>How to win at poker: Play the odds and know when to hold ‘em</h1><p>There are a few basics that all poker players need to understand in order to win more often than they lose: the odds, when to hold ‘em and when to fold ‘em.</p>
-<p>The odds dictate what hands are worth playing and how likely you are to win with them. In general, the better your hand, the better the odds of winning. There are a number of charts and calculators available online that can help you determine the odds for any given situation, but basic understanding of poker hands will give you a good starting point.</p>
-<p>Knowing when to hold ‘em and when to fold ‘em is another important element of poker. In general, you should hold onto a good hand unless there is a good reason to fold it. However, there are also times when folding can be the right play, even if you have a strong hand. For instance, if someone else has already put in a lot of money into the pot and it’s not likely that you’ll be able to win much more than they’ve already bet, folding may be the best option.</p>
-<p>Poker is a game of strategy as well as luck, so learning these basic concepts is essential for anyone looking to improve their game. With practice, you’ll start making better decisions and winning more often.</p>
-<h1 id="What-type-of-poker-player-are-you-Find-out-with-our-quiz"><a href="#What-type-of-poker-player-are-you-Find-out-with-our-quiz" class="headerlink" title="What type of poker player are you? Find out with our quiz"></a>What type of poker player are you? Find out with our quiz</h1><p>Can you figure out your poker type? Take our quiz to find out!</p>
-<p>There are different types of poker players, and each has their own strengths and weaknesses. Are you the kind of player who relies on instincts and gut feelings? Or do you like to have a game plan and stick to it?</p>
-<p>No matter what your style, there’s a type of poker that will work best for you. So, what type of player are you? Take our quiz to find out!</p>
-<h3 id="The-Gambler"><a href="#The-Gambler" class="headerlink" title="The Gambler"></a>The Gambler</h3><p>Are you the kind of person who always goes all in? If so, you’re probably a gambler. Gambler types love the thrill of the gamble, and they’re not afraid to take risks. This can make them great at bluffing, but it can also lead to big losses.</p>
-<p>If you’re a gambler, be careful not to get caught up in the moment. Try to stay calm and analytical, and be willing to fold when necessary. This will help you avoid costly mistakes.</p>
-<h3 id="The-Tactician"><a href="#The-Tactician" class="headerlink" title="The Tactician"></a>The Tactician</h3><p>Do you like to plan each move ahead of time? If so, you’re probably a tactician. These players use their brains more than their gut instincts, and they always have a game plan ready. This can make them great at winning pots, but it can also leave them vulnerable to ambush plays.</p>
-<p>If you’re a tactician, try to be more flexible with your game plan. Be prepared to change course when necessary, and don’t be afraid to take risks. This will help you stay ahead of your opponents.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://keyinvesting.net/I-won-with-just-two-hands!/" data-id="clbmoobli0000q4v5calm1xlb" data-title="I won with just two hands!" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
   </nav>
 </section>
         <aside id="sidebar">
@@ -761,6 +812,10 @@
       <ul>
         
           <li>
+            <a href="/what_is_considered_a_low_credit_card_limit_black_jack_table_in_vegas_Dumas/">what is considered a low credit card limit black jack table in vegas Dumas</a>
+          </li>
+        
+          <li>
             <a href="/WATCH-Red-Sox-players-show-their-excitement-as-they-win-big-with-slot-machine-audio!/">WATCH Red Sox players show their excitement as they win big with slot machine audio!</a>
           </li>
         
@@ -776,10 +831,6 @@
             <a href="/How-to-make-bingo-cards-in-Excel/">How to make bingo cards in Excel</a>
           </li>
         
-          <li>
-            <a href="/NBA-To-Allow-Players-To-Read-Bingo-Cards-In-Slot-Machines/">NBA To Allow Players To Read Bingo Cards In Slot Machines</a>
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -789,7 +840,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Casino-Game/">Casino Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Financial-Services/">Financial Services</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Gambling/">Gambling</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Live-Casino/">Live Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Online-Casino/">Online Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Online-Sports-Betting/">Online Sports Betting</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Play-Fortuna/">Play Fortuna</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Super-Bar-X-Game/">Super Bar X Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Sweetspot-N-V-Casinos/">Sweetspot N.V. Casinos</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Twin-River-Casino/">Twin River Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Vulkan-Casino/">Vulkan Casino</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Casino-Game/">Casino Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Financial-Services/">Financial Services</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Gambling/">Gambling</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Live-Casino/">Live Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Online-Casino/">Online Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Online-Sports-Betting/">Online Sports Betting</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Play-Fortuna/">Play Fortuna</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Super-Bar-X-Game/">Super Bar X Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Sweetspot-N-V-Casinos/">Sweetspot N.V. Casinos</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/The-Jungle-Ii-Game/">The Jungle Ii Game</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Twin-River-Casino/">Twin River Casino</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Vulkan-Casino/">Vulkan Casino</a></li></ul>
     </div>
   </div>
 
@@ -799,7 +850,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/12/">December 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/11/">November 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li></ul>
     </div>
   </div>
 
